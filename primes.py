@@ -1,6 +1,5 @@
 """List of prime numbers generator."""
 """ENTER YOUR SOLUTION HERE!"""
-
 def primes(number_of_primes:int):
     list = [] 
     a = 2 
@@ -11,3 +10,4 @@ def primes(number_of_primes:int):
         else:       
             a+=1    
     return list    
+
