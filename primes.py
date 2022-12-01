@@ -9,5 +9,5 @@ def primes(number_of_primes:int):
           if a % b == 0:      
            break       
         else:       
-        a+=1    
+            a+=1    
     return list    
