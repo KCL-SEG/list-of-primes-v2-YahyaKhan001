@@ -1,13 +1,24 @@
 """List of prime numbers generator."""
 """ENTER YOUR SOLUTION HERE!"""
-def primes(number_of_primes:int):
-    list = [] 
-    a = 2 
-    while len(list) != number_of_primes:   
-        for b in range(2, a):   
-          if a % b == 0:      
-           break       
-        else:       
-            a+=1    
-    return list    
+def Prime(n):
+    # iterate through the length of n //2 + 1
+    for i in range(2, n // 2 + 1):
+        if n % i == 0:
+            return 0
+    return 1
 
+
+# taking input the value of n
+N = int(input("Enter the value of N:"))
+i = 2
+prime_numbers = []
+while 1:
+    if Prime(i):
+        prime_numbers.append(i)
+        if len(prime_numbers) == N:
+            break
+    i += 1
+
+# printing the numbers
+print("First " + str(N) + " Prime numbers are:", end="")
+print(*lst)
